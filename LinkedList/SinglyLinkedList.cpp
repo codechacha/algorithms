@@ -7,9 +7,9 @@ typedef struct ListNode {
 	struct ListNode* next;
 } ListNode;
 
-int ListLength(struct ListNode* head) {
+int ListLength(ListNode* head) {
 	int len = 0;
-	struct ListNode* current = head;
+	ListNode* current = head;
 	while (current!= NULL) 
 	{
 		len++;
@@ -18,8 +18,8 @@ int ListLength(struct ListNode* head) {
 	return len;
 }
 
-void PrintList(struct ListNode* head) {
-	struct ListNode* current = head;
+void PrintList(ListNode* head) {
+	ListNode* current = head;
 	while (current != NULL)
 	{
 		cout << current->data << " -> ";
